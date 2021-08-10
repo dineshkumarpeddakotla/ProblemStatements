@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+<!--    <test verbose="2" name="openPortal">-->
+<!--        <parameter name="url" value="https://blog.savaari.com/covid-travel-pass/"/>-->
+<!--        <classes>-->
+<!--            <class name="com.problemstatements.TestProblemStatements">-->
+<!--                <methods>-->
+<!--                    <include name="openPunePortal"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test verbose="2" name="handle js popup">-->
+<!--        <parameter name="url" value="http://tpcindia.com/"/>-->
+<!--        <classes>-->
+<!--            <class name="com.problemstatements.TestProblemStatements">-->
+<!--                <methods>-->
+<!--                    <include name="tcpip_loginToApplication"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test verbose="2" name="captcha">
+        <parameter name="browserName" value="chrome"/>
+        <parameter name="url" value="https://demos.telerik.com/aspnet-ajax/captcha/examples/overview/defaultcs.aspx"/>
+        <classes>
+            <class name="com.problemstatements.TestProblemStatements">
+                <methods>
+                    <include name="testCaptcha"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
